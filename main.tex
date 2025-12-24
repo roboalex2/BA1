@@ -1,0 +1,52 @@
+% main.tex — Bachelor Thesis (modular, German)
+\documentclass[12pt, a4paper, oneside]{scrreprt}
+
+% Load shared setup
+\usepackage{hcw_bachelor_setup}
+
+% Bibliography database
+\addbibresource{references.bib}
+
+\begin{document}
+
+% -------- Title page --------
+\input{parts/titlepage}
+
+% -------- Front matter (Roman numbering) --------
+\pagenumbering{Roman}
+\setcounter{page}{1}
+
+\input{parts/acknowledgments}
+\input{parts/abstract_de}
+\input{parts/abstract}
+\input{parts/abbrevations}
+
+% Inhaltsverzeichnis (auto-generated with correct page numbers)
+\input{parts/table_of_contents}
+
+\cleardoublepage
+\pagenumbering{arabic}
+
+% start figure/table numbering fresh in main matter:
+\setcounter{figure}{0}
+\setcounter{table}{0}
+
+% -------- Main matter --------
+\input{parts/introduction}
+\input{parts/chapter1}
+\input{parts/chapter2}
+
+% -------- Back matter --------
+\cleardoublepage
+\input{parts/bibliography}
+\cleardoublepage
+\input{parts/overview_ai}
+
+% Optional: Abbildungsverzeichnis & Tabellenverzeichnis in front matter
+\input{parts/list_of_figures}
+\input{parts/list_of_tables}
+
+% -------- Appendix --------
+\input{parts/appendix}
+
+\end{document}

@@ -100,33 +100,32 @@
 % ---- Title page macro ----
 \newcommand{\HCWTitlePage}{%
 \begin{titlepage}
-    \newgeometry{top=0cm, bottom=0cm, left=2.5cm, right=2.5cm, headsep=0pt, footskip=0pt}
-    \thispagestyle{empty}
-    \TitleBackground{figures/background.jpg}
-    
-\vspace*{4.5cm}
-\hspace*{1.5cm}
-\begin{minipage}{0.78\textwidth}
+  \newgeometry{top=0cm, bottom=0cm, left=2.5cm, right=2.5cm, headsep=0pt, footskip=0pt}
+  \thispagestyle{empty}
+  \TitleBackground{figures/background.jpg}
+
+  \vspace*{4.5cm}
+  \hspace*{1.5cm}
+  \begin{minipage}{0.78\textwidth}
     \raggedright
-    {\huge \textbf{\thesistype}  \par\vspace{1cm}}
+    {\huge \textbf{\thesistype}\par\vspace{1cm}}
     {\huge \textbf{\thesistitleEN}\par}
-    {\Large \thesissubtitleEN \par\vspace{1cm}}
+    {\Large \thesissubtitleEN\par\vspace{1cm}}
     {\huge \textbf{\thesistitleDE}\par}
-    {\Large \thesissubtitleDE \par\vspace{1cm}}
+    {\Large \thesissubtitleDE\par\vspace{1cm}}
+
     \vspace*{6cm}
-    Submitted by & \textbf{\authorname \\}
-    To obtain the academic degree of\par
-    \textbf{Bachelor of Xxxxx} \par
-    \vspace*{3cm}
 
     \begin{tabular}{@{}l l@{}}
-        Vienna, 2025 \\
-        Study program: & \studyprogram \\
-        at: & \university \\
-        supervised by: & \supervisor \\
-        & \secondreader \\
+      Submitted by: & \textbf{\authorname}\\
+      To obtain the academic degree of: & \textbf{Bachelor of Xxxxx}\\[1.5cm]
+      Vienna, 2025\\
+      Study program: & \studyprogram\\
+      at: & \university\\
+      supervised by: & \supervisor\\
+      & \secondreader\\
     \end{tabular}
-\end{minipage}
+  \end{minipage}
   \vfill
 \end{titlepage}%
 }

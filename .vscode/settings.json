@@ -8,7 +8,7 @@
       "args": [
         "-interaction=nonstopmode",
         "-synctex=1",
-        "-outdir=build",
+        "-output-directory=build",
         "%DOC%"
       ]
     },

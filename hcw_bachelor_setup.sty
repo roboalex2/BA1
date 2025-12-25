@@ -23,7 +23,12 @@
 \fi
 
 % ---- Layout ----
-\RequirePackage[a4paper, top=0cm, bottom=3cm, left=2.5cm, right=2.5cm, headsep=12mm]{geometry}
+\RequirePackage[a4paper, top=2.5cm, bottom=3cm, left=2.5cm, right=2.5cm, headsep=12mm]{geometry}
+\RedeclareSectionCommand[
+  beforeskip=0pt,
+  afterskip=1cm
+]{chapter}
+
 \setlength{\headheight}{15pt}
 \usepackage{graphicx,eso-pic}
 % one-page background helper
@@ -45,6 +50,11 @@
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
+
+\renewcommand*\chaptermark[1]{%
+  \markboth{\thechapter.\ #1}{}%
+}
+
 \lhead{\leftmark}
 \rhead{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
